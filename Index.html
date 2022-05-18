@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hilora Dewett</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="dogGame.css">
+  <script src="dogGame.js" defer></script>
+</head>
+<body>
+
+  <div id="gameArea">
+    <button id="stopBallButton" onclick="hideGame()">Stop Playing Ball :(</button>
+    <div id="dog">
+      <img id="dog_head" src ="dog_head.svg" draggable="false">
+      <img id="dog_body" src ="dog_body.svg" draggable="false">
+      <img id="dog_run1" src ="dogRun1.svg" draggable="false">
+      <img id="dog_run2" src ="dogRun2.svg" draggable="false">
+    </div>
+    <span id="ball"></span>
+    <!-- <img id="arrow" src="arrow.svg"> -->
+  </div>
+
+
+  <div id="homeSection">
+    <img id="blueBlob" src="blueBlob.svg" />
+    <img id="pinkBlob" src="pinkBlob1.svg" />
+    <img id="greenBlob" src="greenBlob.svg" />
+    <nav id="navBar">
+      <a href="#">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  <div class="wrapper">
+
+
+      <img id="custardBody" src="custardBody.svg" alt="A fluffy white dog">
+      <img id="custardHead" src="custardHead.svg" alt="A fluffy white dog.">
+      <div id="yellowCircle"></div>
+      <h1 class="heading" id="NameTitle">hilora dewett</h1>
+      <h2 id="careerTitle">web developer</h2>
+      <button id="playBall" onclick="showGame()">Play Ball?</button>
+
+
+</div>
+</div>
+<!-- Starting ABOUT section -->
+<div id="pageWrap">
+<a name="about" id="aboutAnchor"></a>
+<div id="aboutSection">
+
+  <div id="aboutFlex1">
+    <div id="aboutHeaderBox">
+      <h2>Hello!</h2>
+    </div>
+    <div id="aboutBox">
+      <div id="aboutBoxText">
+        <p>
+            I'm <strong>Hilora</strong>, a full-stack developer with a love for web development. I love solving problems and writing clean and responsive code that elevates the user experience. <br />
+      <br />
+            I am an empathetic collaborator and value accessibility and inclusivity in all my projects and environments.<br />
+      <br />
+            When I'm not coding, you can find me trying new snacks with my best pal, Custard (the fluffy mascot of this website)!
+      </p>
+      </div>
+      <!-- <img id="blueCircle" src="blueCircle.svg">
+      <img id="pinkCircle" src="pinkCircle.svg"> -->
+    </div>
+  </div>
+  <div id="aboutFlex2" style="width:20%;min-width: 50px;">
+  </div>
+  <div id="aboutFlex3">
+    <img id="profilePic"src="IMG_4571.jpg" alt="A profile picture." />
+  </div>
+    <!-- <img id="profilePic"src="IMG_4571.jpg" alt="A profile picture." />
+    <img id="custardBallDefault" src="custardBallDefault.svg" alt="A fluffy white dog and his yellow ball.">
+    <img id="hearts" src="hearts.svg" alt="A loving fluffy white dog and his yellow ball."> -->
+</div>
+
+<!-- Skills section starts -->
+<a name="skills" id="skillsAnchor"></a>
+<div id="skillsSection">
+  <div id="skillFlex1">
+    <div class="skillGrid">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
+      <img src="photoshop-plain.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" />
+
+    </div>
+  </div>
+  <div id="skillFlex2" style="width:20%;min-width: 50px;"></div>
+  <div id="skillFlex3">
+
+
+
+      <div id="skillsHeaderBox">
+        <h2>Skills</h2>
+      </div>
+      <div id="skillsBox">
+
+
+        <div id="skillsBoxText">
+          <p>
+            My favourite part of my career is that I am always learning! <br />
+            <br /> My HBSc in Evolution and Genetics equipped me with a background in R, SQL, and Python with an excellent skillset for data analysis and visualization. <br /><br /> I have built a foundation in HTML, CSS, and JavaScript. I continue to improve my front-end skills and build my toolkit.<br /><br />
+      <strong>Click an icon to learn more about the skill.</strong>
+        </p>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Skills section ends -->
+<!-- Contact section begins -->
+    <a name="contact" id="contactAnchor"></a>
+<div id="contactSection">
+
+    <div id="contactFlex1">
+        <div id="contactHeaderBox">
+          <h2>Contact</h2>
+        </div>
+        <!-- <img id="custardWag" src="custardWagDefault.svg" /> -->
+        <div id="contactBox">
+          <div id="contactBoxText">
+              <p>
+                I would love to connect and work together!<br /><br />Submit the form or contact me directly at: <strong>h.dewett@outlook.com</strong>
+              </p>
+          </div>
+        </div>
+      </div>
+      <div id="contactFlex2" style="width:20%;min-width: 50px;"></div>
+    <div id="contactFlex3">
+        <form method="" action="">
+
+          <input id="name" type="text" name="name" placeholder="Name">
+
+
+          <input id="email" type="email" name="email" placeholder="Email">
+
+
+          <textarea id="message" name="message" placeholder="What's your message? 🤠"></textarea>
+          <br /><br />
+          <button id="formButton" type="submit">Send</button>
+        </form>
+    </div>
+</div>
+<!-- Contact section ends -->
+</div>
+<!-- Footer starts here -->
+<div id="footSection">
+    <p id="footerText">Designed and Coded with ♥ by Hilora Dewett &copy 2022</p>
+</div>
+</body>
+</html>

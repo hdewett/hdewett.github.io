@@ -1,0 +1,111 @@
+/* dogGame content START */
+
+body{
+  overflow-x: hidden;
+}
+
+#gameArea {
+  position: absolute;
+  width: 98vw;
+  height: 750px;
+  z-index: 100000;
+  display: none;
+}
+
+#dog_head {
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  transition: 1.5s ;
+  overflow: hidden;
+}
+#dog_head:hover {
+  transform: rotate(20deg);
+}
+
+#dog_body {
+  position: absolute;
+  z-index: 0;
+  width: 250px;
+  overflow: hidden;
+}
+
+#dog {
+  position: relative;
+  transition: transform 1.5s;
+  transform: translate(50px,50px);
+  user-select: none;
+  width: 0px;
+}
+
+@keyframes tiltHead {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+
+  }
+}
+
+#ball {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #F9BB57;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 120px;
+  transition: transform 1.5s;
+  z-index: 2;
+  animation: flash 0.7s alternate infinite ease-in-out;
+  font-weight: bold;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #9F6405;
+  }
+  100% {
+    background-color: #F9BB57;
+  }
+}
+
+#dog_run1{
+  display: none;
+  position: absolute;
+  width: 370px;
+  overflow: hidden;
+}
+
+#dog_run2{
+  display: none;
+  position: absolute;
+  width: 370px;
+  overflow: hidden;
+}
+
+#stopBallButton{
+  position:absolute;
+  bottom:-24%;
+  left:3%;
+  background-color: #D6E2D5;
+  border-radius:20px;
+  border-color:#D6E2D5;
+  width:250px;
+  height:35px;
+  font-size:20px;
+  font-family:Bookman Old Style;
+
+}
+#stopBallButton:hover{
+  background-color:#F9BB57;
+  font-weight:bold;
+}
+/* dogGame content END */
