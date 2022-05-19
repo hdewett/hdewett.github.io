@@ -3,6 +3,13 @@
   src: url(fonts/calibri.ttf);
 }
 @font-face {
+  font-family: "calibri";
+  font-weight:normal;
+  font-weight:400;
+  font-style:normal;
+  src: url(fonts/calibril.ttf);
+}
+@font-face {
   font-family: "Bookman Old Style";
   src: url(fonts/BOOKOS.ttf);
 }
