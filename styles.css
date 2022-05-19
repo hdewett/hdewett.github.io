@@ -62,16 +62,16 @@ h2{
 }
 
 #logo{
-  width:100px;
+  width:75px;
   height: 75px;
   position:fixed;
-  top:4%;
-  left:7%;
-  background: url(logo2.svg) no-repeat;
+  top:2%;
+  left:2%;
+  background: url(LogoBlueWhite.svg) no-repeat;
 }
 
 #logo:hover {
-  background: url(logoBrown.svg) no-repeat
+  background: url(LogoBrownWhite.svg) no-repeat
 }
 
 #pinkBlob{
@@ -105,14 +105,13 @@ a:link{
 }
 a:hover{
   color:#9FB3E0;
-  text-decoration: underline;
 }
 nav a{
   color:#514425;
 }
 #navBar{
   position:fixed;
-  top:5%;
+  top:3%;
   right:5%;
   font-family:"Candara";
   font-size:28px;
@@ -219,7 +218,7 @@ nav a{
   min-width: 300px;
 }
  #profilePic {
-  width:400px;
+  width:350px;
   border-radius:55px;
   box-shadow: 5px 10px #888888;
 }
@@ -448,11 +447,7 @@ textarea {
   height:70px;
   background-color:#9FB3E0;
 }
-#footSection:hover {
-  position: relative;
-  height:70px;
-  background-color: #D6E2D5;
-}
+
 
 #footerText {
   text-align: center;
