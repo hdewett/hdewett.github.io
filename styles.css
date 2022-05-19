@@ -36,7 +36,7 @@ body{
   font-family:'calibri';
 
   color:#514425;
-  font-size:1.2em;
+  font-size:1.3em;
   min-height: 100vh;
   margin:0;
 }
@@ -201,7 +201,7 @@ nav a{
 
 #aboutAnchor{
   position: absolute;
-  top: 115%;
+  top: 125vh;
 }
 
 #aboutSection {
@@ -210,12 +210,12 @@ nav a{
   width: 80%;
   max-width: 1200px;
   align-items: center;
-  height: 700px;
+  height: 100vh;
 }
 
 #aboutBox {
   background-color:white;
-  height:350px;
+  height:420px;
   border-radius:55px;
   z-index:500;
   overflow-y:auto;
@@ -224,7 +224,7 @@ nav a{
   min-width: 300px;
 }
  #profilePic {
-  height:350px;
+  height:420px;
   border-radius:55px;
   box-shadow: 5px 10px #888888;
 }
@@ -265,7 +265,7 @@ nav a{
   width: 80%;
   max-width: 1200px;
   align-items: center;
-  height: 700px;
+  height: 100vh;
 
 }
 #skillsBox{
@@ -347,7 +347,7 @@ grid-row-gap: 35px;
   width: 80%;
   max-width: 1200px;
   align-items: center;
-  height: 700px;
+  height: 100vh;
 
 }
 #contactBox{
