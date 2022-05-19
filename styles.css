@@ -239,16 +239,16 @@ nav a{
 
  #car {
    position: absolute;
-   width: 400px;
+   width: 300px;
    animation: carRide 7s infinite linear ;
  }
 
  @keyframes carRide {
    0% {
-     transform: translate(-50vw,400px) ;
+     transform: translate(-50vw,315px) ;
    }
    100% {
-     transform: translate(100vw,400px) ;
+     transform: translate(100vw,315px) ;
    }
  }
 
