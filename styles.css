@@ -19,6 +19,14 @@
   font-family: "Bookman Old Style";
   src: url(fonts/BOOKOS.ttf);
 }
+@font-face {
+  font-family: "Candara";
+  font-weight:normal;
+  font-weight:400;
+  font-style:normal;
+  src: url(fonts/Candara.ttf);
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -93,6 +101,7 @@ h2{
 }
 a:link{
   text-decoration:none;
+  color:#514425;
 }
 a:hover{
   color:#9FB3E0;
@@ -105,6 +114,7 @@ nav a{
   position:fixed;
   top:5%;
   right:5%;
+  font-family:"Candara";
   font-size:28px;
   word-spacing:20px;
   z-index:10000;
@@ -129,7 +139,7 @@ nav a{
   font-weight:400;
   letter-spacing:3px;
   line-height: 70px;
-  font-family: "calibri";
+  font-family: "Candara";
 }
 #yellowCircle{
   display:inline-block;
@@ -191,11 +201,11 @@ nav a{
 
 #aboutSection {
   display: flex;
-  margin:auto;
+  margin:50px auto;
   width: 80%;
   max-width: 1200px;
   align-items: center;
-  height: 100vh;
+  height: 700px;
 }
 
 #aboutBox {
@@ -236,7 +246,7 @@ nav a{
 
  @keyframes carRide {
    0% {
-     transform: translate(-100vw,400px) ;
+     transform: translate(-50vw,400px) ;
    }
    100% {
      transform: translate(100vw,400px) ;
@@ -246,11 +256,11 @@ nav a{
 /* Skills section starts here */
 #skillsSection {
   display: flex;
-  margin:auto;
+  margin:50px auto;
   width: 80%;
   max-width: 1200px;
   align-items: center;
-  height: 100vh;
+  height: 700px;
 
 }
 #skillsBox{
@@ -286,6 +296,19 @@ grid-column-gap: 35px;
 grid-row-gap: 35px;
 }
 
+.skillIcon:hover{
+  animation: wiggle 0.2s infinite alternate ease-in-out ;
+}
+
+@keyframes wiggle {
+  0%{
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
 .skillsCaption {
   text-align: center;
   font-weight: bold;
@@ -293,7 +316,7 @@ grid-row-gap: 35px;
 
 #custardBallDefault {
   position: absolute;
-  transform:translate(300px, 350px);
+  transform:translate(194px, 380px);
   width: 250px;
   z-index:1000;
 }
@@ -303,7 +326,7 @@ grid-row-gap: 35px;
   position: absolute;
   width: 170px;
   z-index:500;
-  transform: translate(450px, 310px) rotate(30deg);
+  transform: translate(335px, 344px) rotate(30deg);
 }
 
 #custardBallDefault:hover + #hearts{
@@ -315,10 +338,11 @@ grid-row-gap: 35px;
 #contactSection {
   display: flex;
   margin:auto;
+  margin-top: 50px;
   width: 80%;
   max-width: 1200px;
   align-items: center;
-  height: 90vh;
+  height: 700px;
 
 }
 #contactBox{
@@ -367,7 +391,7 @@ grid-row-gap: 35px;
     transform: translate(80px,330px) rotate(0deg);
   }
   100% {
-    transform: translate(1200px,330px) rotate(1080deg);
+    transform: translate(75vw,330px) rotate(1080deg);
   }
 }
 
@@ -415,18 +439,24 @@ textarea {
   background:#FABAAE;
   border: 1px solid #514425;
   border-radius:20px;
+  font-weight:bold;
 }
 /* Contact Section Ends */
 /* Footer starts here */
 #footSection {
   position: relative;
-  height:6vh;
+  height:70px;
+  background-color:#9FB3E0;
+}
+#footSection:hover {
+  position: relative;
+  height:70px;
   background-color: #D6E2D5;
 }
 
 #footerText {
   text-align: center;
-  padding-top: 19px;
+  padding-top: 21px;
   font-size: 20px;
   color: #514425;
 }
