@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #F7F5F4;
   font-family:'calibri';
@@ -32,6 +36,35 @@ top:0%;
   height:100vh;
 
 }
+
+/* #logo:hover {
+  display: none;
+} */
+
+
+
+#logo{
+  width:100px;
+  height: 75px;
+  position:fixed;
+  top:4%;
+  left:7%;
+  background: url(logo2.svg) no-repeat;
+}
+
+/* #logoBrown{
+  display:none;
+  position:fixed;
+  width:100px;
+  top:5%;
+  left:7%;
+
+} */
+
+#logo:hover {
+  background: url(logoBrown.svg) no-repeat
+}
+
 #pinkBlob{
   position:fixed;
   bottom:0px;
@@ -103,6 +136,8 @@ nav a{
   font-size:32px;
   font-weight:400;
   letter-spacing:3px;
+  line-height: 70px;
+  font-family: "calibri";
   /* z-index:500; */
 }
 #yellowCircle{
