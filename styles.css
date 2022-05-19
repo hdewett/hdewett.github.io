@@ -36,7 +36,7 @@ body{
   font-family:'calibri';
 
   color:#514425;
-  font-size:1.3em;
+  font-size:1.2em;
   min-height: 100vh;
   margin:0;
 }
@@ -198,6 +198,12 @@ nav a{
   border-top: #F7F5F4 solid 40px;
 }
 
+
+#aboutAnchor{
+  position: absolute;
+  top: 115%;
+}
+
 #aboutSection {
   display: flex;
   margin:50px auto;
@@ -209,7 +215,7 @@ nav a{
 
 #aboutBox {
   background-color:white;
-  height:410px;
+  height:350px;
   border-radius:55px;
   z-index:500;
   overflow-y:auto;
@@ -218,7 +224,7 @@ nav a{
   min-width: 300px;
 }
  #profilePic {
-  width:350px;
+  height:350px;
   border-radius:55px;
   box-shadow: 5px 10px #888888;
 }
@@ -245,10 +251,10 @@ nav a{
 
  @keyframes carRide {
    0% {
-     transform: translate(-50vw,315px) ;
+     transform: translate(-50vw,305px) ;
    }
    100% {
-     transform: translate(100vw,315px) ;
+     transform: translate(100vw,305px) ;
    }
  }
 
