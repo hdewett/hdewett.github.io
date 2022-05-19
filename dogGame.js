@@ -1,18 +1,8 @@
-// These are Event Listeners, and they take action when some Event happens.
-// In this case, the event is "click".
-// There are a few different ways to add event listeners. This is just one way:
-// [element id].addEventListener("[Event]",[function_to_run]) .
-// in the event listener the function name is all that is required, an example
-// of a function that I made is dogFollow. There isn't () after the function
-// name here because () would tell javascript to run that function now but
-// that isn't what we want
-
 ball.addEventListener("click",dogGetBall);
 dog.addEventListener("transitionend",dogAnimationEnd);
 dogRunning = false;
 // dog running is set to false here so I can keep track of when he is running
-// You can't see it, but the Event Listener passes an Event Object to the
-// function.
+
 
 // This is the function that moves the ball and makes dog go after it.
 function dogGetBall() {

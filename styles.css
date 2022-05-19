@@ -16,7 +16,7 @@ p{
 }
 h2{
   font-family:'Bookman Old Style';
-  font-size:2.6em;
+  font-size:2.4em;
   font-weight:normal;
   letter-spacing:2px;
   padding-bottom:20px;
@@ -24,24 +24,12 @@ h2{
   padding:10px 0px 0px 25px;
 
 }
-/* #pinkBlob, #blueBlob, #greenBlob {
-position:fixed;
-height:1000px;
-width:1800px;
-top:0%;
 
-} */
 #homeSection {
   position: relative;
   height:100vh;
 
 }
-
-/* #logo:hover {
-  display: none;
-} */
-
-
 
 #logo{
   width:100px;
@@ -51,15 +39,6 @@ top:0%;
   left:7%;
   background: url(logo2.svg) no-repeat;
 }
-
-/* #logoBrown{
-  display:none;
-  position:fixed;
-  width:100px;
-  top:5%;
-  left:7%;
-
-} */
 
 #logo:hover {
   background: url(logoBrown.svg) no-repeat
@@ -113,32 +92,22 @@ nav a{
   font-family:'Bookman Old Style';
   font-size:80px;
   font-weight:400;
-  /* font-weight:regular; */
 }
 #NameTitle{
   letter-spacing:7px;
-  /* text-align:right; */
   position:absolute;
   right:200px;
   top:250px;
-  /* margin:18% 10% 0% 0%; */
-  /* z-index:500; */
-  /* margin-right:10%;
-  margin-top:18%;
-  margin-bottom:0px; */
 }
 #careerTitle{
   position:absolute;
   right:300px;
   top:360px;
-  /* text-align:right; */
-  /* margin:0% 18% 0% 0%; */
   font-size:32px;
   font-weight:400;
   letter-spacing:3px;
   line-height: 70px;
   font-family: "calibri";
-  /* z-index:500; */
 }
 #yellowCircle{
   display:inline-block;
@@ -150,22 +119,6 @@ nav a{
   width:120px;
   border-radius:50%;
 }
-
-/* #blueCircle{
-  position:relative;
-  left:200px;
-  top:-180px;
-  transform: rotate(22deg);
-  z-index:200;
-
-}
-#pinkCircle{
-  position:absolute;
-  right:1500px;
-  top:-100px;
-  transform: rotate(22deg);
-
-} */
 
 #custardHead,#custardBody{
   position:absolute;
@@ -214,27 +167,6 @@ nav a{
   border-top: #F7F5F4 solid 40px;
 }
 
-
-
-
-
-
-#custardBallDefault {
-transform:translateX(-300px);
-transform:translateY(250px);
-
-
-  width: 200px;
-  height:400px;
-  z-index:400;
-}
-
-#hearts {
-  width: 170px;
-  z-index:500;
-  transform: rotate(30deg);
-}
-
 #aboutSection {
   display: flex;
   margin:auto;
@@ -260,25 +192,8 @@ transform:translateY(250px);
   box-shadow: 5px 10px #888888;
 }
 
-/* #aboutBox{
-  display:inline-block;
-  background-color:white;
-  width:35%;
-  min-width:300px;
-  height:400px;
-  border-radius:55px;
-  /* position:relative; */
-  /* top:15%; */
-  /* left:10%; */
-  /* z-index:500;
-  overflow-y:auto;
-  box-shadow: 5px 10px #888888;
-} */
 #aboutBoxText{
-
   padding:60px 35px 30px 40px;
-
-  /* margin:35px 30px 35px 30px; */
 }
 #aboutHeaderBox{
   background-color:#D6E2D5;
@@ -289,19 +204,22 @@ transform:translateY(250px);
   z-index:1000;
   transform: translateX(50px) translateY(-40px);
 }
-/* #aboutHeaderText{
-
-} */
 
 
- #custardBallDefault:hover + #hearts {
-   display: unset;
+ #car {
+   position: absolute;
+   width: 400px;
+   animation: carRide 7s infinite linear ;
  }
 
-
-
-
-
+ @keyframes carRide {
+   0% {
+     transform: translate(-100vw,400px) ;
+   }
+   100% {
+     transform: translate(100vw,400px) ;
+   }
+ }
 
 /* Skills section starts here */
 #skillsSection {
@@ -324,10 +242,7 @@ transform:translateY(250px);
   min-width: 300px;
 }
 #skillsBoxText{
-
   padding:60px 35px 30px 40px;
-
-  /* margin:35px 30px 35px 30px; */
 }
 #skillsHeaderBox{
   background-color:#FABAAE;
@@ -338,14 +253,6 @@ transform:translateY(250px);
   z-index:1000;
   transform: translateX(50px) translateY(-40px);
 }
-/* #skillsHeaderText{
-  font-family:'Bookman Old Style';
-  font-weight:400;
-  letter-spacing:2px;
-  font-size:50px;
-  text-align:center;
-  padding:11px;
-} */
 
 .skillGrid {
 display: grid;
@@ -355,8 +262,32 @@ grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 35px;
 grid-row-gap: 35px;
-
 }
+
+.skillsCaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+#custardBallDefault {
+  position: absolute;
+  transform:translate(300px, 350px);
+  width: 250px;
+  z-index:1000;
+}
+
+#hearts {
+  display: none;
+  position: absolute;
+  width: 170px;
+  z-index:500;
+  transform: translate(450px, 310px) rotate(30deg);
+}
+
+#custardBallDefault:hover + #hearts{
+  display: unset;
+}
+
 /* Skills section ends */
 /* Contact section starts */
 #contactSection {
@@ -379,41 +310,50 @@ grid-row-gap: 35px;
   box-shadow: 5px 10px #888888;
 }
 #contactBoxText{
-
   padding:60px 35px 30px 40px;
-
-  /* margin:35px 30px 35px 30px; */
 }
 #contactHeaderBox{
-  background-color:#F9BB57;
-  width:280px;
+  background-color:#9FB3E0;
+  width:250px;
   height:80px;
   border-radius:36px;
   position: absolute;
   z-index:1000;
   transform: translateX(50px) translateY(-40px);
 }
-/* #contactHeaderText{
-  font-family:'Bookman Old Style';
-  font-weight:400;
-  letter-spacing:2px;
-  font-size:50px;
-  text-align:center;
-  padding:11px;
-} */
 
 #custardWag{
   width:260px;
   position:absolute;
-  top:65%;
-  left:90px;
   z-index:1000;
-
+  transform: translate(-100px,240px);
 }
+
+#smallYellowCircle{
+  display:inline-block;
+  position:absolute;
+  background-color:#F9BB57;
+  height:80px;
+  width:80px;
+  border-radius:50%;
+  z-index: 10000;
+  animation: ballRoll 4s alternate infinite ease-in-out ;
+}
+
+@keyframes ballRoll {
+  0% {
+    transform: translate(80px,330px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1200px,330px) rotate(1080deg);
+  }
+}
+
 form {
   width: 100%;
   max-width: 480px;
 }
+
 input,
 textarea {
   border: 1px solid #514425;
@@ -428,18 +368,18 @@ textarea {
   font-size:20px;
   float: right;
 }
+
 input {
   height: 40px;
 }
+
 textarea {
   height: 200px;
   padding-top:8px;
   resize:vertical;
   max-height:400px;
-
-
-  /* resize:none; */
 }
+
 #formButton {
   background: #F9BB57;
   border: 1px solid #514425;
@@ -448,17 +388,14 @@ textarea {
   font-size: 16px;
   float: right;
 }
+
 #formButton:hover{
   background:#FABAAE;
   border: 1px solid #514425;
   border-radius:20px;
-
 }
-
-
-
+/* Contact Section Ends */
 /* Footer starts here */
-
 #footSection {
   position: relative;
   height:6vh;
@@ -471,17 +408,4 @@ textarea {
   font-size: 20px;
   color: #514425;
 }
-
- /* #custardBody{
-  width:20%;
-  position:absolute;
-}  */
-/* #custardHome{ */
-  /* position:relative; */
-  /* margin:0% 0% 10% 10%; */
-  /* position:relative;
-  display:flex;
-  top: */
-
-  /* z-index:1000; */
-/* } */
+/* footer ends here */
