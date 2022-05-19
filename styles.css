@@ -201,7 +201,7 @@ nav a{
 
 #aboutAnchor{
   position: absolute;
-  top: 125vh;
+  top: 120vh;
 }
 
 #aboutSection {
@@ -321,7 +321,7 @@ grid-row-gap: 35px;
 
 #custardBallDefault {
   position: absolute;
-  transform:translate(194px, 380px);
+  transform:translate(194px, 380px) rotate(5deg);
   width: 250px;
   z-index:1000;
 }
