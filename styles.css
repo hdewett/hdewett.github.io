@@ -116,7 +116,7 @@ nav a{
   font-family:"Candara";
   font-size:28px;
   word-spacing:20px;
-  z-index:10000;
+  z-index:1000000;
 }
 
 .heading{
@@ -372,6 +372,31 @@ grid-row-gap: 35px;
   z-index:1000;
   transform: translateX(50px) translateY(-40px);
 }
+
+.contactGrid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.contactIcon{
+background-color:#9FB3E0;
+width:150px;
+height:150px;
+border-radius: 36px;
+}
+
+.contactIcon:hover{
+  background-color:#FABAAE;
+  animation: wiggle 0.2s infinite alternate ease-in-out ;
+}
+
+#emailIcon{
+  padding:10px;
+}
+
 
 #custardWag{
   width:260px;
