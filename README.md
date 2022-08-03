@@ -3,7 +3,7 @@ Hilora's Website
 
 This is the very first webpage that I coded! I'm currently using it as a portfolio and I'm hoping to update it with more projects soon. The website was designed and coded by Hilora Dewett (that's me 🤠) entirely with HTML, CSS, and Javascript. 
 
-The biggest challenge I've had with this project is not sacrificing my personality for a simpler design. There is A LOT on this web page and I'm doing my best to make it as clean and accessible as I can! There were times that I thought it would be so much simpler just to scrap the funky background, or remove the Play Ball game from the homepage, remove the animations, etc., but I am glad that I didn't. I think it's doable to have a fun website that reflects me while maintaining it's accessibility.
+The biggest challenge I've had with this project is not sacrificing my personality for a simpler design. There is A LOT on this web page and I'm doing my best to make it as clean and accessible as I can! There were times that I thought it would be so much simpler just to scrap the funky background, remove the Play Ball game from the homepage, remove the animations, etc., but I am glad that I didn't. I think it's doable to have a fun website that reflects me while maintaining it's accessibility.
 
 What I'm currently working on:
 - Responsiveness: 
