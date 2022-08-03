@@ -1,5 +1,5 @@
 # hdewett.github.io
-Hilora's Website
+Hilora's Website : hilora.ca
 
 This is the very first webpage that I coded! I'm currently using it as a portfolio and I'm hoping to update it with more projects soon. The website was designed and coded by Hilora Dewett (that's me 🤠) entirely with HTML, CSS, and Javascript. 
 
