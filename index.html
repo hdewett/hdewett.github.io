@@ -4,49 +4,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Hilora Dewett</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="dogGame.css">
-  <script src="dogGame.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/dogGame.css">
+  <script src="js/dogGame.js" defer></script>
 </head>
 <body>
-  <img id="blueBlob" src="blueBlob.svg" />
-  <img id="pinkBlob" src="pinkBlob1.svg" />
-  <img id="greenBlob" src="greenBlob.svg" />
+  <img id="blueBlob" src="images/blueBlob.svg" />
+  <img id="pinkBlob" src="images/pinkBlob1.svg" />
+  <img id="greenBlob" src="images/greenBlob.svg" />
 <!-- Ball game starts -->
   <div id="gameArea">
     <button id="stopBallButton" onclick="hideGame()">Stop Playing Ball :(</button>
     <div id="dog">
-      <img id="dog_head" src ="dog_head.svg" draggable="false">
-      <img id="dog_body" src ="dog_body.svg" draggable="false">
-      <img id="dog_run1" src ="dogRun1.svg" draggable="false">
-      <img id="dog_run2" src ="dogRun2.svg" draggable="false">
+      <img id="dog_head" src ="images/dog_head.svg" draggable="false">
+      <img id="dog_body" src ="images/dog_body.svg" draggable="false">
+      <img id="dog_run1" src ="images/dogRun1.svg" draggable="false">
+      <img id="dog_run2" src ="images/dogRun2.svg" draggable="false">
     </div>
     <span id="ball"></span>
   </div>
   <!-- Ball game ends -->
 
-  <!-- home section starts -->
-  <div id="homeSection">
-    <div id="navBar">
-      <nav>
-        <a href="#">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#contact">CONTACT</a>
-      </nav>
-    </div>
-    <a href="#">
+  <div id="navBar" class="navBarOff">
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <!-- <a href="#">
       <div id="logo" title="Scroll to top"></div>
-    </a>
-    <div class="homeWrapper">
-      <img id="custardBody" src="custardBody.svg" alt="A fluffy white dog" title="Custard, the very good boy!">
-      <img id="custardHead" src="custardHead.svg" alt="A fluffy white dog." title="Custard, the very good boy!">
-      <div id="yellowCircle"></div>
-      <h1 class="heading" id="NameTitle">hilora dewett</h1>
-      <h2 id="careerTitle">web developer</h2>
-      <button id="playBall" onclick="showGame()">Play Ball?</button>
+    </a> -->
+  </div>
+  <!-- home section starts -->
+
+  <div id="homeSection">
+    <div id="custardHome">
+      <img id="custardBody" src="images/custardBody.svg" alt="A fluffy white dog" title="Custard, the very good boy!">
+      <img id="custardHead" src="images/custardHead.svg" alt="A fluffy white dog." title="Custard, the very good boy!">
     </div>
+    <div id="pageTitle">
+      <div id="yellowCircle"></div>
+      <h1 class="heading" id="nameTitle">hilora dewett</h1>
+      <h2 id="careerTitle">web developer</h2>
+    </div>
+    <button id="playBall" onclick="showGame()">Play Ball?</button>
   </div>
 <!-- home section ends -->
 <!-- About section starts -->
@@ -71,18 +74,18 @@
         </div>
       </div>
       <div id="aboutFlex2">
-        <img id="profilePic"src="profilePic.jpg" alt="A profile picture." />
+        <img id="profilePic"src="images/profilePic.jpg" alt="A profile picture." />
       </div>
     </div>
   <!-- About section ends -->
     <div id="car">
-      <img src="custardCAR.svg" />
+      <img src="images/custardCAR.svg" />
     </div>
   <!-- Skills section starts -->
     <a name="skills" id="skillsAnchor"></a>
     <div id="skillsSection">
       <div id="skillsFlex1">
-        <div class="skillGrid">
+        <div id="skillsGrid">
           <div class="skillIcon">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
             <p class="skillsCaption">HTML5</p>
@@ -145,8 +148,8 @@
             </p>
           </div>
         </div>
-        <img id="custardBallDefault" src="custardBallDefault.svg" alt="A fluffy white dog and his yellow ball."/>
-        <img id="hearts" src="hearts.svg" alt="A loving fluffy white dog and his yellow ball."/>
+        <img id="custardBallDefault" src="images/custardBallDefault.svg" alt="A fluffy white dog and his yellow ball."/>
+        <img id="hearts" src="images/hearts.svg" alt="A loving fluffy white dog and his yellow ball."/>
       </div>
     </div>
 <!-- Skills section ends -->
@@ -176,7 +179,7 @@
         </div>
         </a>
         <!-- twitter -->
-        <a href="https://twitter.com/hiloradewett target="_blank"">
+        <a href="https://twitter.com/hiloradewett" target="_blank">
         <div class="contactIcon" title="Twitter">
           <svg viewBox="-37 -37 200 200">
           <path d="M40.254 127.637c48.305 0 74.719-48.957 74.719-91.403 0-1.39 0-2.777-.075-4.156 5.141-4.547 9.579-10.18 13.102-16.633-4.79 2.602-9.871 4.305-15.078 5.063 5.48-4.02 9.582-10.336 11.539-17.774-5.156 3.743-10.797 6.38-16.68 7.801-8.136-10.586-21.07-13.18-31.547-6.32-10.472 6.86-15.882 21.46-13.199 35.617C41.922 38.539 22.246 26.336 8.915 6.27 1.933 20.94 5.487 39.723 17.022 49.16c-4.148-.172-8.207-1.555-11.832-4.031v.41c0 15.273 8.786 28.438 21.02 31.492a21.596 21.596 0 01-11.863.543c3.437 13.094 13.297 22.07 24.535 22.328-9.305 8.918-20.793 13.75-32.617 13.72-2.094 0-4.188-.15-6.266-.446 12.008 9.433 25.98 14.441 40.254 14.422" fill="white"></path>
@@ -202,14 +205,17 @@
         </div>
         </a>
         </div>
-          <img id="custardDown" src="custardWagDefault.svg" title="A Good Boy" />
-          <img id="smallYellowCircle" src="custardsBall.svg"/>
     </div>
   <!-- Contact section ends -->
+    <div id="custardWithBall">
+      <img id="custardDown" src="images/custardWagDefault.svg" title="A Good Boy"/>
+      <img id="smallYellowCircle" src="images/custardsBall.svg"/>
+    </div>
   <!-- Footer starts here -->
     <div id="footSection">
       <p id="footerText">Designed and Coded with ♥ and snacks by Hilora Dewett &copy 2022</p>
     </div>
+
   </div>
 <!-- Footer ends -->
 </body>

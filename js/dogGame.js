@@ -86,6 +86,7 @@ function showGame() {
 	custardHead.style.display = "none";
 	custardBody.style.display = "none";
 	yellowCircle.style.display = "none";
+	pageTitle.style.display = "none";
 	dogGo(getX(ball),getY(ball),-60,-130);
 }
 // This function hides the ball and makes dog return to the top left corner
@@ -95,7 +96,8 @@ function hideGame() {
 	playBall.style.display = "unset";
 	custardHead.style.display = "unset";
 	custardBody.style.display = "unset";
-	yellowCircle.style.display = "unset";
+	yellowCircle.style.display = "inline-block";
+	pageTitle.style.display = "unset";
 	dog.style.transform = "translate(0px,0px)";
 }
 // These are functions that gets the coordinates of a given Element.

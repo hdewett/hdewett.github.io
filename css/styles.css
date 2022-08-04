@@ -1,30 +1,30 @@
 @font-face {
   font-family: "calibri";
-  src: url(fonts/calibri.ttf);
+  src: url(../fonts/calibri.ttf);
 }
 @font-face {
   font-family: "calibri";
   font-weight:normal;
   font-weight:400;
   font-style:normal;
-  src: url(fonts/calibril.ttf);
+  src: url(../fonts/calibril.ttf);
 }
 
 @font-face {
   font-family: "calibri";
   font-weight:bold;
-  src: url(fonts/calibrib.ttf);
+  src: url(../fonts/calibrib.ttf);
 }
 @font-face {
   font-family: "Bookman Old Style";
-  src: url(fonts/BOOKOS.ttf);
+  src: url(../fonts/BOOKOS.ttf);
 }
 @font-face {
   font-family: "Candara";
   font-weight:normal;
   font-weight:400;
   font-style:normal;
-  src: url(fonts/Candara.ttf);
+  src: url(../fonts/Candara.ttf);
 }
 
 * {
@@ -42,6 +42,7 @@ body{
   font-size:1.3em;
   min-height: 100vh;
   margin:0;
+  overflow-x: hidden;
 }
 p{
   margin:0;
@@ -59,23 +60,25 @@ h2{
 }
 
 #homeSection {
-  position: relative;
+  display: flex;
   height:100vh;
-
+  justify-content: center;
 }
 
-#logo{
+/* #logo{
+  display: inline-block;
   width:75px;
   height: 75px;
-  position:fixed;
-  top:2%;
-  left:2%;
-  background: url(LogoBlueWhite.svg) no-repeat;
+  position: relative;
+  top:20px;
+  left:15px;
+  background: url(../images/LogoBlueWhite.svg) no-repeat;
+  opacity:1
 }
 
 #logo:hover {
-  background: url(LogoBrownWhite.svg) no-repeat
-}
+  background: url(../images/LogoBrownWhite.svg) no-repeat
+} */
 
 #pinkBlob{
   position:fixed;
@@ -93,10 +96,23 @@ h2{
 }
 #greenBlob{
   position:fixed;
-  top:0;
+  top: 0px;
   right:0;
   z-index: -1;
-  user-select: none;
+  user-select: none;.
+}
+
+.greenBlobAnimation {
+  animation: greenBlobDrop 0.4s;
+}
+
+@keyframes greenBlobDrop {
+  0%{
+    top: 0px;
+  }
+  100% {
+    top: 100px;
+  }
 }
 
 .homeWrapper{
@@ -112,9 +128,9 @@ a:hover{
 }
 
 nav {
-  position:fixed;
-  top:3%;
-  right:5%;
+  position: fixed;
+  top: 30px;
+  right: 5%;
   font-family:"Candara";
   font-size:28px;
   word-spacing:20px;
@@ -124,7 +140,20 @@ nav a{
   color:#514425;
 
 }
-#navBar{
+
+#navBar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 10000;
+}
+
+.navBarOn{
+  background: rgba(247,245,244,0.7);
+
+}
+
+.navBarOff{
 }
 
 .heading{
@@ -132,39 +161,48 @@ nav a{
   font-size:80px;
   font-weight:400;
 }
-#NameTitle{
+
+#pageTitle {
+  margin: 200px auto 0px auto;
+}
+
+#nameTitle{
   letter-spacing:7px;
-  position:absolute;
-  right:200px;
-  top:250px;
+  margin: 0;
+  line-height: 80px;
+
 }
 #careerTitle{
-  position:absolute;
-  right:300px;
-  top:360px;
   font-size:32px;
   font-weight:400;
   letter-spacing:3px;
-  line-height: 70px;
+  line-height: 32px;
   font-family: "Candara";
+  padding: 0;
+  text-align: center;
 }
 #yellowCircle{
   display:inline-block;
-  position:absolute;
-  right:150px;
-  top:315px;
+  position: relative;
+  left: 515px;
+  top: 125px;
   background-color:#F9BB57;
-  height:120px;
   width:120px;
+  height: 120px;
   border-radius:50%;
+  z-index: -1;
+}
+
+#custardHome {
+  position: relative;
+  width: 350px;
+  height: 50%;
+  margin: auto;
 }
 
 #custardHead,#custardBody{
   position:absolute;
-  max-width:22%;
-  min-width:350px;
-  bottom:20%;
-  left:15%;
+  min-width:200px;
   user-select:none;
 }
 
@@ -202,10 +240,6 @@ nav a{
 #pageWrap{
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-
-
   width: 100%;
   height: 100%;
   background-color: rgba(247,245,244,0.6);
@@ -215,6 +249,7 @@ nav a{
 /* About Section Start */
 #aboutAnchor{
   position: relative;
+  bottom: 100px;
 }
 
 #aboutSection {
@@ -226,7 +261,7 @@ nav a{
 }
 
 #aboutSection #aboutFlex1, #aboutFlex2{
-  padding: 0 5%;
+  margin: 0 5%;
 }
 
 #aboutBoxHeader{
@@ -276,8 +311,6 @@ nav a{
   }
 }
 
-
-
 /* Skills section starts here */
 #skillsAnchor{
   position: relative;
@@ -291,19 +324,21 @@ nav a{
   margin: 50px 0 0 0;
 }
 
-
-
 #skillsSection #skillsFlex1, #skillsFlex2{
-  padding: 0 5%;
+  margin: 0 5%;
 }
 
-.skillGrid {
+#skillsGrid {
 display: grid;
 width:480px;
 grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 35px;
 grid-row-gap: 35px;
+justify-items: center;
+}
+
+.skillIcon {
+  width: 100%;
 }
 
 .skillIcon:hover{
@@ -352,8 +387,8 @@ grid-row-gap: 35px;
   position: relative;
   width: 50%;
   max-width: 250px;
-  transform:translate(194px, -60px) rotate(5deg);
-
+  transform:translate(170px, -60px) rotate(5deg);
+  z-index:1000;
 }
 
 #hearts {
@@ -380,18 +415,19 @@ grid-row-gap: 35px;
 }
 
 #contactSection #contactFlex1, #contactGrid{
-  padding: 0 5%;
+  margin: 0 5%;
 }
 
 #contactBox{
+  display: flex;
+  align-items: center;
   background-color:white;
-  height:410px;
   border-radius:55px;
-  z-index:1;
+  box-shadow: 5px 10px #888888;
   overflow-y:auto;
   max-width:480px;
-  min-width: 300px;
-  box-shadow: 5px 10px #888888;
+  min-width: 350px;
+
 }
 #contactBoxText{
   padding:60px 35px 30px 40px;
@@ -409,7 +445,6 @@ grid-row-gap: 35px;
 #contactGrid {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 10px;
 grid-row-gap: 10px;
 }
@@ -430,79 +465,36 @@ border-radius: 36px;
   padding:10px;
 }
 
+#custardWithBall {
+  position: relative;
+  margin: 0 0 0 5%;
+  top: 5px;
+}
 
 #custardDown{
   width:260px;
-  position:absolute;
-  z-index:1000;
-  transform: translate(-430px,240px);
 }
 
 #smallYellowCircle{
+  position: relative;
+  transform-box: border-box;
   display:inline-block;
-  position:absolute;
   background-color:#F9BB57;
   height:80px;
   width:80px;
   border-radius:50%;
-  z-index: 10000;
   animation: ballRoll 4s alternate infinite ease-in-out ;
 }
 
 @keyframes ballRoll {
   0% {
-    transform: translate(-300px,330px) rotate(0deg);
+    transform: rotate(0deg);
+    left: 0px;
   }
   100% {
-    transform: translate(45vw,330px) rotate(1080deg);
+    transform: rotate(1080deg);
+    left: calc(100% - 340px);
   }
-}
-
-form {
-  width: 100%;
-  max-width: 480px;
-}
-
-input,
-textarea {
-  border: 1px solid #514425;
-  border-radius:20px;
-  width:90%;
-  max-width:500px;
-  min-width:200px;
-  margin-bottom: 10px;
-  padding-left:30px;
-  padding-right:20px;
-  font-family:calibri;
-  font-size:20px;
-  float: right;
-}
-
-input {
-  height: 40px;
-}
-
-textarea {
-  height: 200px;
-  padding-top:8px;
-  resize:vertical;
-  max-height:400px;
-}
-
-#formButton {
-  background: #F9BB57;
-  border: 1px solid #514425;
-  border-radius:20px;
-  padding: 10px 40px;
-  font-size: 16px;
-  float: right;
-}
-
-#formButton:hover{
-  background:#FABAAE;
-  border: 1px solid #514425;
-  border-radius:20px;
-  font-weight:bold;
 }
 /* Contact Section Ends */
 /* Footer starts here */
@@ -510,9 +502,8 @@ textarea {
   position: relative;
   height:70px;
   background-color:#9FB3E0;
-  margin: 200px 0 0 0;
+  margin: 0 0 0 0;
 }
-
 
 #footerText {
   text-align: center;
@@ -520,12 +511,16 @@ textarea {
   font-size: 20px;
   color: #514425;
 }
-
-
-
 /* footer ends here */
-
 @media (max-width: 1000px) {
+  #homeSection {
+    flex-direction: column-reverse;
+  }
+
+  #custardHome {
+    width: 200px;
+  }
+
   #aboutFlex2{
     display: none;
   }
@@ -533,27 +528,123 @@ textarea {
     flex-direction: column-reverse;
     align-items: center;
   }
-  #skillsFlex2 {
-    margin-bottom: 125px;
+  #contactSection{
+    flex-direction: column;
   }
   #contactGrid {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0 5% 0 0;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 25px 0 0 0;
   }
   .contactIcon {
     width: 100px;
     height: 100px;
+    border-radius: 24px;
+  }
+  #playBall {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+
+  #pageTitle{
+    margin: 200px auto 0px auto;
+  }
+
+  #pageTitle h1{
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 5.25px;
+  }
+
+  #pageTitle h2{
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+  }
+
+
+  #yellowCircle{
+    left: 386.25px;
+    top: 93.75px;
+    width: 90px;
+    height: 90px;
+  }
+
+
+
+  #logo {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    display: table;
+    margin: auto;
+    right: unset;
+    font-size: 20px;
+    top: 35px;
+  }
+
+  #custardDown {
+    width: 130px;
+  }
+  #smallYellowCircle {
+    width: 40px;
+    height: 40px;
+  }
+
+  @keyframes ballRoll {
+    0% {
+      transform: rotate(0deg);
+      left: 0px;
+    }
+    100% {
+      transform: rotate(1080deg);
+      left: calc(100% - 170px);
+    }
+  }
+}
+@media (max-width: 500px) {
+  #skillsGrid{
+    grid-template-columns: repeat(3,1fr);
+    width: 360px;
+  }
+  .skillIcon{
+  }
+  .contactIcon {
+    width: 75px;
+    height: 75px;
+    border-radius: 18px;
+  }
+  #hearts{
+    width: 20%;
   }
 }
 
-@media (max-width: 500px) {
-  #aboutFlex2{
-    display: none;
+@media (max-width: 450px){
+  #pageTitle h1{
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 3.5px;
   }
-  #skillsSection {
-    flex-direction: column-reverse;
+
+  #pageTitle h2{
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
   }
-  #skillsFlex2 {
-    margin-bottom: 125px;
+
+  #yellowCircle{
+    left: 257.5px;
+    top: 62.5px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 374px) {
+  #skillsGrid{
+    grid-template-columns: repeat(2,1fr);
+    width: 240px;
   }
 }
