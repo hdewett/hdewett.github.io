@@ -49,7 +49,7 @@ p{
   padding:0;
 }
 h2{
-  font-family:'Bookman Old Style';
+  font-family:"Bookman Old Style";
   font-size:2.4em;
   font-weight:normal;
   letter-spacing:2px;
@@ -157,7 +157,7 @@ nav a{
 }
 
 .heading{
-  font-family:'Bookman Old Style';
+  font-family:"Bookman Old Style";
   font-size:80px;
   font-weight:400;
 }
@@ -229,7 +229,7 @@ nav a{
   width:180px;
   height:35px;
   font-size:20px;
-  font-family:Bookman Old Style;
+  font-family:"Bookman Old Style";
 
 }
 #playBall:hover{
@@ -508,7 +508,7 @@ border-radius: 36px;
 #footerText {
   text-align: center;
   padding-top: 21px;
-  font-size: 20px;
+  font-size: 16px;
   color: #514425;
 }
 /* footer ends here */
@@ -549,7 +549,7 @@ border-radius: 36px;
   }
 
   *:hover{
-    
+
   }
 }
 @media (max-width: 680px) {
