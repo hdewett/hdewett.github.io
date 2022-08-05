@@ -17,7 +17,7 @@
 }
 @font-face {
   font-family: "Bookman Old Style";
-  src: url(../fonts/BOOKOS.ttf);
+  src: url(../fonts/Bookman.ttf);
 }
 @font-face {
   font-family: "Candara";
@@ -26,6 +26,7 @@
   font-style:normal;
   src: url(../fonts/Candara.ttf);
 }
+
 
 * {
   box-sizing: border-box;
