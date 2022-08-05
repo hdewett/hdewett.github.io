@@ -548,6 +548,9 @@ border-radius: 36px;
     animation: none;
   }
 
+  *:hover{
+    
+  }
 }
 @media (max-width: 680px) {
 
