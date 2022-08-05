@@ -549,9 +549,7 @@ border-radius: 36px;
     display: none;
   }
 
-  #car {
-    animation: none;
-  }
+
 
   *:hover{
 
@@ -615,6 +613,9 @@ border-radius: 36px;
       transform: rotate(1080deg);
       left: calc(100% - 170px);
     }
+  }
+  #car {
+    animation: none;
   }
 }
 @media (max-width: 500px) {
