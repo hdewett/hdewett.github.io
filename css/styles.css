@@ -543,6 +543,11 @@ border-radius: 36px;
   #playBall {
     display: none;
   }
+
+  #car {
+    animation: none;
+  }
+
 }
 @media (max-width: 680px) {
 
