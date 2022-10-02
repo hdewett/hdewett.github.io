@@ -1,12 +1,10 @@
-/* dogGame content START */
-
 body{
   overflow-x: hidden;
 }
 
 #gameArea {
   position: absolute;
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
   display: none;
 }
@@ -35,21 +33,7 @@ body{
   transform: translate(50px,50px);
   user-select: none;
   width: 0px;
-}
-
-@keyframes tiltHead {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50%{
-    transform: rotate(-30deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-
-  }
+  z-index: 100000;
 }
 
 #ball {
@@ -65,6 +49,7 @@ body{
   z-index: 2;
   animation: flash 0.7s alternate infinite ease-in-out;
   font-weight: bold;
+  z-index: 100000;
 }
 
 @keyframes flash {
@@ -101,10 +86,8 @@ body{
   height:35px;
   font-size:20px;
   font-family:Bookman Old Style;
-
 }
 #stopBallButton:hover{
   background-color:#F9BB57;
   font-weight:bold;
 }
-/* dogGame content END */
