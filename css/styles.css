@@ -86,8 +86,8 @@ h2{
 }
 #greenBlob{
   position:fixed;
-  top: 0px;
-  right:0;
+  bottom:600px;
+  right:-300px;
   z-index: -1;
   user-select: none;
 }
@@ -114,9 +114,9 @@ nav {
   gap: 25px;
   z-index: 1100;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-right: 5%;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 nav a{
   color:#514425;
@@ -614,6 +614,13 @@ border-radius: 36px;
     top: 62.5px;
     width: 60px;
     height: 60px;
+  }
+  #greenBlob{
+    position:fixed;
+    top:-100px;
+    right:-60px;
+    z-index: -1;
+    user-select: none;
   }
 }
 
