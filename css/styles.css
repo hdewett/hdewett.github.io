@@ -226,6 +226,7 @@ nav a{
   background-color: rgba(247,245,244,0.6);
   border-top: #F7F5F4 solid 40px;
   overflow-x: hidden;
+  border-radius: 5%;
 }
 
 /* About Section Start */
