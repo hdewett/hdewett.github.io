@@ -85,11 +85,13 @@ h2{
   user-select: none;
 }
 #greenBlob{
-  position:fixed;
-  bottom:600px;
-  right:-300px;
+  position: fixed;
+  top:-218px;
+  right: -161px;
   z-index: -1;
   user-select: none;
+  min-width: 917px;
+  min-height: 417px;
 }
 
 .homeWrapper{
