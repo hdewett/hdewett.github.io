@@ -619,10 +619,12 @@ border-radius: 36px;
   }
   #greenBlob{
     position:fixed;
-    top:-100px;
-    right:-60px;
+    top:-213px;
+    right:-131px;
     z-index: -1;
     user-select: none;
+    width:100%;
+    height:50%;
   }
 }
 
