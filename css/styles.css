@@ -323,10 +323,10 @@ display: grid;
 width: 100%;
 max-width:480px;
 min-width: 350px;
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(5, 1fr);
 gap: 35px;
 margin: 0 5%;
-padding: 20px;
+padding: 50px 20px 20px 20px;
 height: fit-content;
 }
 
@@ -351,6 +351,7 @@ height: fit-content;
   text-align: center;
   font-weight: bold;
   margin: 0 -20px;
+  font-size: large;
 }
 
 #skillsBox{
