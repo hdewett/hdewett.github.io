@@ -86,12 +86,12 @@ h2{
 }
 #greenBlob{
   position: fixed;
-  top:-218px;
-  right: -161px;
+  top:-280px;
+  right: -280px;
   z-index: -1;
   user-select: none;
-  min-width: 917px;
-  min-height: 417px;
+  width:75%;
+  height:50%;
 }
 
 .homeWrapper{
