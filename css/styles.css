@@ -19,37 +19,37 @@
 }
 
 @font-face {
-  font-family: "calibri";
-  src: url(../fonts/calibri.ttf);
+  font-family: "Carlito";
+  src: url(../fonts/Carlito-Regular.ttf);
 }
 @font-face {
-  font-family: "calibri";
+  font-family: "Carlito";
   font-weight:normal;
   font-weight:400;
   font-style:normal;
-  src: url(../fonts/calibril.ttf);
+  src: url(../fonts/Carlito-Regular.ttf);
 }
 
 @font-face {
-  font-family: "calibri";
+  font-family: "Carlito";
   font-weight:bold;
-  src: url(../fonts/calibrib.ttf);
+  src: url(../fonts/Carlito-Bold.ttf);
 }
 @font-face {
-  font-family: "Bookman Old Style";
-  src: url(../fonts/Bookman.ttf);
+  font-family: "Alice";
+  src: url(../fonts/Alice-Regular.ttf);
 }
 @font-face {
-  font-family: "Candara";
+  font-family: "Nobile";
   font-weight:normal;
   font-weight:400;
   font-style:normal;
-  src: url(../fonts/Candara.ttf);
+  src: url(../fonts/Nobile-Regular.ttf);
 }
 
 @font-face {
   font-family: "Baskerville";
-  src: url(../fonts/BASKVILL.TTF);
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
 }
 
 * {
@@ -62,7 +62,7 @@ html{
 
 body{
   background-color: #F7F5F4;
-  font-family:'calibri';
+  font-family:'Carlito';
   color:#514425;
   font-size:1.3em;
   min-height: 100vh;
@@ -74,7 +74,7 @@ p{
   padding:0;
 }
 h2{
-  font-family:"Bookman Old Style", "Baskerville";
+  font-family:"Alice", "Baskerville";
   font-size:2.4em;
   font-weight:normal;
   letter-spacing:2px;
@@ -130,8 +130,8 @@ nav {
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  font-family:"Candara";
-  font-size:28px;
+  font-family:"Nobile";
+  font-size:24px;
   word-spacing:20px;
   gap: 25px;
   z-index: 1100;
@@ -158,7 +158,7 @@ nav a{
 }
 
 .heading{
-  font-family:"Bookman Old Style", "Baskerville";
+  font-family:"Alice", "Baskerville";
   font-size:80px;
   font-weight:400;
 }
@@ -178,7 +178,7 @@ nav a{
   font-weight:400;
   letter-spacing:3px;
   line-height: 32px;
-  font-family: "Candara";
+  font-family: "Nobile";
   padding: 0;
   text-align: center;
 }
@@ -229,8 +229,9 @@ nav a{
   border-color:#D6E2D5;
   width:180px;
   height:35px;
-  font-size:20px;
-  font-family:"Bookman Old Style", "Baskerville";
+  font-size:22px;
+  letter-spacing: 1px;
+  font-family:"Alice", "Baskerville";
 
 }
 #playBall:hover{
